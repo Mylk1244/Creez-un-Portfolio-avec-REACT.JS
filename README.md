@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+Portfolio de John Doe - Développeur Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet consiste en la création d'un site portfolio dynamique et responsive pour John Doe, futur développeur web en fin de formation.
+L'objectif est de présenter son profil, ses services et ses réalisations de manière professionnelle pour le marché de l'emploi.
 
-## Available Scripts
 
-In the project directory, you can run:
+Page d'Accueil : doit contenus plusieurs pages .
 
-### `npm start`
+ 1 Page d'accueil
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    o Une image de fond en pleine page (Hero),
+    o Des balises h1 et h2 centrées horizontalement par rapport à l'image,
+    o Un bouton "En savoir plus" (voir § La Modale),
+    o Une section contenant la présentation de John Doe et la liste de ses compétences
+      (progress bar Bootstrap).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ 1 page de services
 
-### `npm test`
+    o La présentation des offres de services que John Doe propose (sous forme de Card
+      Bootstrap),
+    o Chaque Card doit changer de couleur de fond (#efefef) et voir une légère ombre
+      sur son pourtour au survol,
+    o La disposition des Cards en fonction du media de visualisation est celui des
+      maquettes fournies,
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ 1 page réalisations
 
-### `npm run build`
+    o Le portfolio de John Doe, avec un minimum de 6 projets, présentés sous forme
+      de Card Bootstrap. Vous pouvez personnaliser et ajouter des réalisations si vous
+      le souhaitez,
+    o Chaque Card doit changer de couleur de fond (#efefef) et voir une légère ombre
+      sur son pourtour au survol,
+    o Le couleur de fond du bouton doit s'éclaircir légèrement au survol de celui-ci,
+    o La disposition des Cards en fonction du media de visualisation est celui des
+      maquettes fournies,
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ 1 page de contact
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    o Un formulaire de contact intégrant les champs nom, courriel, numéro de
+      téléphone, sujet et message (tous obligatoires).
+    o Les coordonnées de John Doe : adresse, numéro de téléphone, mail et Google
+      Map,
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 1 page avec les mentions légales
 
-### `npm run eject`
+    o L’éditeur du site,
+    o L’hébergeur du site,
+    o Les crédits, avec un lien vers le site de Pixabay pour les images et vers Flaticon
+      pour le favicon,
+    o La mise en page est réalisée en utilisant le composant accordéon de Bootstrap,
+    o Cette page ne doit pas être indexée par les moteurs de recherche
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Sur tout le site
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ Le header
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    o Le header est présent sur toutes les pages,
+    o Il reprend le logo à gauche et la navigation vers les pages à droite. Sur mobile et
+      tablette, la navigation s’affiche sous forme d’icône de « hamburger »,
+    o L’élément actif doit pouvoir être affiché dans une autre couleur ou nuance
+      (https://reactrouter.com/en/main/components/nav-link),
+    o Le texte des hyperliens est affiché en majuscule, en utilisant des règles CSS ou
+      une classe Bootstrap,
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ Le footer
 
-## Learn More
+    o Le footer est identique sur toutes les pages,
+    o Il contient des colonnes de largeur égale :
+    o La 1ère avec le nom du développeur, son adresse, son numéro de téléphone et les
+      icônes vers ses réseaux professionnels (Github, Twitter et LinkedIn),
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+        Les icônes doivent être cliquables et mener vers les comptes que John
+        Doe possède sur les différents réseaux. Leur couleur doit s’éclaircir au
+        survol,
+        Les liens doivent s’ouvrir dans une nouvelle fenêtre et ne doivent pas être
+        suivis pour le SEO,
+        
+    o La 2ème colonne reprend les liens vers les différentes pages,
+    o La 3ème colonne reprend les liens vers les dernières réalisations (tant que les
+      contenus de chaque réalisation ne sont pas disponibles, le lien se fera sur la page
+      Portfolio,
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ La modale
 
-### Code Splitting
+    o Une fenêtre modale doit permettre de présenter des éléments du profil GitHub
+      de John Doe. Cette modale sera ouverte au clic sur le bouton "En savoir plus" du
+      Hero de la page d'accueil,
+    o Les informations sont disponibles ici : https://api.github.com/users/github-johndoe, Si vous préférez utiliser les informations de  votre propre profil, libre à vous,
+    o Les informations ne doivent être récupérées qu'une fois, au moment du
+      chargement de la page (pensez à utilise le hook useEffect)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Effets graphiques
 
-### Analyzing the Bundle Size
+Les effets suivants sont demandés (CSS) :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ Dans le menu du header
 
-### Making a Progressive Web App
+    o Le lien actif doit être mis en évidence (gras + souligné),
+    o Les liens doivent être soulignés au survol,
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+ Cards
 
-### Advanced Configuration
+    o Une ombre doit être appliquée autour de la Card au survol,
+    o La couleur de fond de la Card doit être modifiée au survol de la Card,
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+ Boutons
 
-### Deployment
+    o La couleur de fond des boutons doit s'assombrir au survol,
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+ Pied de page
 
-### `npm run build` fails to minify
+    o Les images des réseaux sociaux doivent devenir blancs au survol,
+    o Les liens du pied de page doivent passer en gras au survol.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+N'hésitez pas à utiliser des transitions CSS. 
