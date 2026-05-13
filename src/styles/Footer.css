@@ -1,0 +1,21 @@
+.custom-footer a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.custom-footer ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.custom-footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
