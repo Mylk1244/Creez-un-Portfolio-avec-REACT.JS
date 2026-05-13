@@ -41,3 +41,11 @@ main {
 .progress-bar {
   transition: width 1s ease-in-out;
 }
+
+.section-divider {
+  height: 3px !important;
+  background-color: #007bff !important;
+  opacity: 1 !important;
+  border: none !important;
+  width: 40%;
+}
